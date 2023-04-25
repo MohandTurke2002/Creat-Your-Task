@@ -1,0 +1,22 @@
+@import "../../Components/VariablesScss/VariablesScss.scss";
+
+.verifitext {
+  text-align: center;
+  .verifi {
+    color: var(--welcome-Color-li);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .verifipara {
+    color: var(--welcome-Color-li);
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .verifipara {
+    font-size: 22px !important;
+  }
+}

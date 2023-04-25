@@ -1,0 +1,83 @@
+@import "../../Components/VariablesScss/VariablesScss.scss";
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapprofile {
+    background: #ffffff;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25), -7px -7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 30px 100px;
+    width: 700px;
+    height: fit-content;
+    background-color: var(--bg-sign-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .wrapemail,
+    .wrappassowrd,
+    .wrapusername {
+      width: 100%;
+    }
+    .wrapemail,
+    .wrappassowrd,
+    .wrapusername {
+      label {
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 25px;
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 60px;
+        span {
+          z-index: 9999;
+          position: relative;
+          left: 30px;
+          color: var(--text-sign-color);
+          background-color: var(--bg-sign-color);
+          height: 5px;
+          display: block;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+        }
+        input {
+          width: 100%;
+          border: 2px solid var(--border-Color-li);
+          border-radius: 10px;
+          padding: 11px;
+          position: absolute;
+          left: 0;
+          top: 58%;
+          background-color: white;
+          &:focus {
+            border: 2px solid var(--border-Color-li);
+            outline: none;
+          }
+        }
+      }
+    }
+    .wrapbuttons {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--welcome-Color-li);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapprofile {
+    padding: 20px !important;
+  }
+}

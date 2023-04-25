@@ -1,0 +1,20 @@
+@import "../VariablesScss/VariablesScss.scss";
+.footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-Color-li);
+  color: var(--text-Color-li);
+  i {
+    color: var(--icon-Color-li);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    h3 {
+      font-size: 15px !important;
+    }
+  }
+}

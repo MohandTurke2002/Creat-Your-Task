@@ -1,0 +1,26 @@
+@import "../../Components/VariablesScss/VariablesScss.scss";
+.textwelcome {
+  text-align: center;
+  .welcome {
+    color: var(--welcome-Color-li);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    i {
+      color: var(--icon-Color-wel);
+      font-size: 32px;
+    }
+  }
+  .welcomepara {
+    color: var(--welcome-Color-li);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .welcome {
+    font-size: 30px !important;
+  }
+}

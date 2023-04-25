@@ -1,0 +1,130 @@
+@import "../../Components/VariablesScss/VariablesScss.scss";
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .no-task {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .wraptasks {
+    padding: 40px 80px;
+    .tasks {
+      .checked {
+        border: 2px solid var(--main-Color-li) !important;
+        background-color: var(--bg-body-color) !important;
+        .taskpara {
+          color: var(--welcome-Color-li) !important;
+          text-decoration: line-through !important;
+        }
+        .buttonstask {
+          .edite,
+          .check {
+            color: var(--welcome-Color-li) !important;
+            border: 2px solid var(--welcome-Color-li) !important;
+          }
+        }
+      }
+      .task {
+        background-color: var(--main-Color-li);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+        .taskpara {
+          font-weight: 600;
+          font-size: 25px;
+          color: white;
+          text-transform: capitalize;
+        }
+        .buttonstask {
+          display: flex;
+          .update {
+            color: #38e54d;
+            margin-right: 10px;
+            border: 2px solid #38e54d;
+          }
+          .edite,
+          .check {
+            margin-right: 10px;
+            color: white;
+            border: 2px solid white;
+          }
+          .del {
+            color: #df2e38;
+            border: 2px solid #df2e38;
+          }
+          button {
+            background-color: transparent;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+          .wraptitle {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            width: 0px;
+          }
+          input {
+            border: 2px solid var(--border-Color-li);
+            border-radius: 10px;
+            padding: 7px;
+            background-color: white;
+            margin: 0px 12px;
+            &:focus {
+              border: 2px solid var(--border-Color-li);
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapadd {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 40px;
+    .addtask {
+      .buttonadd {
+        padding: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: var(--main-Color-li);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wraptasks {
+    padding: 20px !important;
+    .buttonstask {
+      flex-direction: column !important;
+      align-items: end !important;
+      .wrapbutton {
+        display: flex !important;
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+}
