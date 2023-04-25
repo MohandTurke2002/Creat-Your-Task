@@ -5,12 +5,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8JGOUIJNga_KoTPbS-scttAmFBaqeEvo",
-  authDomain: "test-6393e.firebaseapp.com",
-  projectId: "test-6393e",
-  storageBucket: "test-6393e.appspot.com",
-  messagingSenderId: "541660758660",
-  appId: "1:541660758660:web:4373a63b20d9c784e378d1",
+  apiKey: "AIzaSyDkKwIzm7tfIhCmfoCrVzAV-IdmnneMt8I",
+  authDomain: "creat-a-task-5f39b.firebaseapp.com",
+  projectId: "creat-a-task-5f39b",
+  storageBucket: "creat-a-task-5f39b.appspot.com",
+  messagingSenderId: "144480700912",
+  appId: "1:144480700912:web:dab2f7219aabd754d57535",
 };
 
 const app = initializeApp(firebaseConfig);
