@@ -46,6 +46,9 @@
         }
         .buttonstask {
           display: flex;
+          .wrapbutton {
+            display: flex;
+          }
           .update {
             color: #38e54d;
             margin-right: 10px;
